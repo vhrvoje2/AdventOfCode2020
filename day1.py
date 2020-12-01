@@ -16,15 +16,15 @@ def part1(values):
 def part2(values):
     values.sort()
 
-    for value in values:
+    for i in range(len(values)):
         leftPtr = 0
         rightPtr = len(values) - 1
 
         while(leftPtr < rightPtr):
-            if values[leftPtr] + values[rightPtr] + value == 2020:
-                print(f"Part 2. solution {value} * {values[leftPtr]} * {values[rightPtr]} = {value * values[leftPtr] * values[rightPtr]}")
+            if values[leftPtr] + values[rightPtr] + values[i] == 2020:
+                print(f"Part 2. solution {values[i]} * {values[leftPtr]} * {values[rightPtr]} = {values[i] * values[leftPtr] * values[rightPtr]}")
                 return
-            elif values[leftPtr] + values[rightPtr] + value > 2020 - value:
+            elif values[leftPtr] + values[rightPtr] + values[i] > 2020 - values[i]:
                 rightPtr -= 1
             else:
                 leftPtr += 1
