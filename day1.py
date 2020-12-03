@@ -3,7 +3,7 @@ with open('day1input.txt', 'r') as file:
     for item in file.readlines():
         values.append(int(item.strip()))
 
-def part1(values):
+def part1():
     valuesSet = set()
 
     for value in values:
@@ -13,7 +13,7 @@ def part1(values):
         else:
             valuesSet.add(2020 - value)
 
-def part2(values):
+def part2():
     values.sort()
 
     for i in range(len(values)):
@@ -29,5 +29,5 @@ def part2(values):
             else:
                 leftPtr += 1
 
-part1(values)
-part2(values)
+part1()
+part2()

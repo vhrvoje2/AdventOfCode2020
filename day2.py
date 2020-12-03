@@ -3,8 +3,7 @@ with open('day2input.txt', 'r') as file:
     for item in file.readlines():
         passwords.append(item.strip())
 
-
-def part1(passwords):
+def part1():
     validPasswordCount = 0
     for element in passwords:
         rule, password = element.split(':')
@@ -18,7 +17,7 @@ def part1(passwords):
     
     print(f"Part 1. solution {validPasswordCount}")
 
-def part2(passwords):
+def part2():
     validPasswordCount = 0
     for element in passwords:
         positions, password = element.split(':')
@@ -32,5 +31,5 @@ def part2(passwords):
     
     print(f"Part 2. solution {validPasswordCount}")
 
-part1(passwords)
-part2(passwords)
+part1()
+part2()
