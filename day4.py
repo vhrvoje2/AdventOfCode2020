@@ -29,37 +29,9 @@ eyeColors = [
     'oth'
 ]
 
-allowedSymbols = [
-    '0',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f'
-]
+allowedSymbols = '0123456789abcdef'
 
-numbers = [
-    '0',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9'
-]
+numbers = '0123456789'
 
 def part1():
     validPasswords = 0
